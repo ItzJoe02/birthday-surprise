@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Thangoww ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- FLOATING HEARTS -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+
+    <!-- ================= WELCOME ================= -->
+
+    <section id="welcome" class="screen welcome-screen">
+
+        <div class="welcome-box">
+
+            <div class="big-heart">❤️</div>
+
+            <p class="small-title">A little surprise for</p>
+
+            <h1>My Thangoww 💕</h1>
+
+            <p class="welcome-text">
+                I made something special<br>
+                just for you...
+            </p>
+
+            <div class="paw">🐾</div>
+
+            <button onclick="startSurprise()" class="start-btn">
+                Open Your Surprise 💌
+            </button>
+
+            <p class="from-text">
+                From your Meoww 🐱❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COUNTDOWN ================= -->
+
+    <section id="countdown" class="screen hidden">
+
+        <p class="countdown-text">
+            Get ready Thangoww... ❤️
+        </p>
+
+        <div id="countNumber">3</div>
+
+        <p class="countdown-bottom">
+            Something from your Meoww 🐱
+        </p>
+
+    </section>
+
+
+    <!-- ================= MAIN WEBSITE ================= -->
+
+    <main id="main" class="hidden">
+
+        <!-- MUSIC -->
+
+        <audio id="bgMusic" loop>
+            <source src="music/our-song.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero section">
+
+            <div class="hero-content">
+
+                <div class="sparkle">✨</div>
+
+                <p class="subtitle">
+                    To the person who means everything to me
+                </p>
+
+                <h1>
+                    Happy Birthday
+                    <span>Thangoww</span> ❤️
+                </h1>
+
+                <div class="heart-line">
+                    ───── ❤️ ─────
+                </div>
+
+                <p class="hero-message">
+                    Today is not just your birthday...
+                    <br>
+                    It's the day my favourite person was born. 🥹❤️
+                </p>
+
+                <p class="signature">
+                    — Your Meoww 🐱
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OUR STORY ================= -->
+
+        <section class="story section">
+
+            <div class="section-title">
+
+                <span>OUR LITTLE STORY</span>
+
+                <h2>
+                    How It All Started 💕
+                </h2>
+
+            </div>
+
+            <div class="story-card">
+
+                <div class="story-icon">💻</div>
+
+                <h3>Our First Meeting</h3>
+
+                <p>
+                    We first met during our college online class.
+                    Who would have thought that one ordinary online
+                    class would bring you into my life? 🥹❤️
+                </p>
+
+            </div>
+
+
+            <div class="story-card">
+
+                <div class="story-icon">💬</div>
+
+                <h3>Our First Conversation</h3>
+
+                <p>
+                    I was the one who started talking...
+                    I asked you a doubt.
+                    And somehow that little conversation became
+                    something so beautiful. ❤️
+                </p>
+
+            </div>
+
+
+            <div class="story-card">
+
+                <div class="story-icon">🚌</div>
+
+                <h3>Our First Bus Ride</h3>
+
+                <p>
+                    After we fell in love, we went together
+                    on a bus.
+                    One simple journey became one of my favourite
+                    memories with you. 🥹💕
+                </p>
+
+            </div>
+
+
+            <div class="story-card highlight-card">
+
+                <div class="story-icon">🤝</div>
+
+                <h3>Almost 3 Years ❤️</h3>
+
+                <p>
+                    Almost three years of memories,
+                    fights, laughter, caring, teasing,
+                    possesiveness and so much love.
+                </p>
+
+                <strong>
+                    And I still choose you. Always. ❤️
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MEMORIES ================= -->
+
+        <section class="gallery section">
+
+            <div class="section-title">
+
+                <span>OUR MEMORIES</span>
+
+                <h2>
+                    Every Picture Has A Story 📸
+                </h2>
+
+            </div>
+
+
+            <div class="memory-slider">
+
+                <div class="photo-frame">
+
+                    <img
+                        id="memoryPhoto"
+                        src="images/v1.jpeg"
+                        alt="Our Memory"
+                    >
+
+                </div>
+
+
+                <div class="photo-info">
+
+                    <span id="photoNumber">
+                        1 / 9
+                    </span>
+
+                    <p id="photoCaption">
+                        One of the memories I will always keep close to my heart ❤️
+                    </p>
+
+                </div>
+
+
+                <div id="photoDots" class="photo-dots"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAVOURITE MEMORY ================= -->
+
+        <section class="favorite section">
+
+            <div class="section-title">
+
+                <span>A SPECIAL ONE</span>
+
+                <h2>
+                    My Favourite Memory ❤️
+                </h2>
+
+            </div>
+
+
+            <div class="favorite-card">
+
+                <div class="favorite-image">
+
+                    <img
+                        src="images/v5.jpeg"
+                        alt="My Favourite Memory"
+                    >
+
+                </div>
+
+                <div class="favorite-text">
+
+                    <div class="quote">
+                        “
+                    </div>
+
+                    <p>
+                        If I could choose one memory to live again,
+                        I would choose the moments where it was just
+                        you and me.
+                    </p>
+
+                    <p>
+                        Because with you, even ordinary moments
+                        feel special. ❤️
+                    </p>
+
+                    <div class="quote">
+                        ”
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY I LOVE YOU ================= -->
+
+        <section class="love section">
+
+            <div class="section-title">
+
+                <span>FROM MY HEART</span>
+
+                <h2>
+                    Why I Love You ❤️
+                </h2>
+
+            </div>
+
+
+            <div class="reasons">
+
+                <div class="reason">
+                    <span>❤️</span>
+                    <h3>Your Smile</h3>
+                    <p>
+                        Your smile can instantly make my day better.
+                    </p>
+                </div>
+
+
+                <div class="reason">
+                    <span>🫶</span>
+                    <h3>Your Caring Heart</h3>
+                    <p>
+                        The way you care for me means more than
+                        you know.
+                    </p>
+                </div>
+
+
+                <div class="reason">
+                    <span>🥹</span>
+                    <h3>Your Kindness</h3>
+                    <p>
+                        Your little acts of kindness stay in my heart.
+                    </p>
+                </div>
+
+
+                <div class="reason">
+                    <span>😂</span>
+                    <h3>You Make Me Laugh</h3>
+                    <p>
+                        Life is much more fun when you are around.
+                    </p>
+                </div>
+
+
+                <div class="reason">
+                    <span>🤗</span>
+                    <h3>You Make Me Feel Safe</h3>
+                    <p>
+                        With you, I feel like I belong.
+                    </p>
+                </div>
+
+
+                <div class="reason">
+                    <span>💍</span>
+                    <h3>You Are My Future</h3>
+                    <p>
+                        I don't just want memories with you.
+                        I want a lifetime with you.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MEOW SURPRISE ================= -->
+
+        <section class="meow-section section">
+
+            <div class="section-title">
+
+                <span>ONE LITTLE SECRET</span>
+
+                <h2>
+                    What Does Your Meoww Say? 🐱
+                </h2>
+
+            </div>
+
+
+            <div class="meow-card">
+
+                <div class="cat">
+                    🐱
+                </div>
+
+                <h2>
+                    MEOWWWWW! 💕
+                </h2>
+
+                <p>
+                    If you ever wonder what your Meoww wants
+                    to tell you...
+                </p>
+
+                <button
+                    class="cute-btn"
+                    onclick="showMeowMessage()"
+                >
+                    Click Meoww 🐾
+                </button>
+
+                <div
+                    id="meowMessage"
+                    class="hidden message-box"
+                >
+                    <p>
+                        Thangoww... ❤️
+                        <br><br>
+
+                        Bayapadatha.
+                        <br>
+                        Na epavum un koodave irupe.
+                        <br>
+                        Unna vitu poira matee.
+                        <br><br>
+
+                        It's my promise. 🤝❤️
+                        <br><br>
+
+                        I LOVE YOU MUHH!! 😘❤️
+                        <br><br>
+
+                        — Your Meoww 🐱
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QUIZ ================= -->
+
+        <section class="quiz-section section">
+
+            <div class="section-title">
+
+                <span>A LITTLE GAME</span>
+
+                <h2>
+                    Love Quiz 💕
+                </h2>
+
+            </div>
+
+
+            <div class="quiz-card">
+
+                <div id="quizProgress">
+                    Question 1 of 5
+                </div>
+
+                <h3 id="question">
+                    Loading...
+                </h3>
+
+                <div id="answers" class="answers"></div>
+
+                <p id="quizResult"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TRIP ================= -->
+
+        <section class="trip section">
+
+            <div class="section-title">
+
+                <span>OUR ADVENTURES</span>
+
+                <h2>
+                    Our First Long Trip 🚌❤️
+                </h2>
+
+            </div>
+
+
+            <div class="trip-card">
+
+                <div class="trip-icon">
+                    🚌
+                </div>
+
+                <h3>
+                    Our First Long Trip
+                </h3>
+
+                <p>
+                    One of those journeys that I will never forget.
+                </p>
+
+                <p>
+                    The place doesn't matter as much as the person
+                    sitting beside me.
+                </p>
+
+                <strong>
+                    And that person was you. ❤️
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GIFTS ================= -->
+
+        <section class="gifts section">
+
+            <div class="section-title">
+
+                <span>A FEW SURPRISES</span>
+
+                <h2>
+                    I Have Something For You 🎁
+                </h2>
+
+            </div>
+
+
+            <div class="gift-buttons">
+
+                <button
+                    class="gift-btn"
+                    onclick="openGift()"
+                >
+                    🎁 Gift 1
+                </button>
+
+
+                <button
+                    class="gift-btn"
+                    onclick="openLetter()"
+                >
+                    💌 Gift 2
+                </button>
+
+
+                <button
+                    class="gift-btn"
+                    onclick="startCelebration()"
+                >
+                    🎉 Final Surprise
+                </button>
+
+            </div>
+
+
+            <div
+                id="giftBox"
+                class="hidden gift-message"
+            >
+
+                <div class="gift-big">
+                    🎁
+                </div>
+
+                <h2>
+                    My Gift To You ❤️
+                </h2>
+
+                <p>
+                    My time.
+                    <br>
+                    My love.
+                    <br>
+                    My care.
+                    <br>
+                    My forever.
+                    ❤️
+                </p>
+
+            </div>
+
+
+            <div
+                id="letterBox"
+                class="hidden letter"
+            >
+
+                <h2>
+                    💌 A Letter For My Thangoww
+                </h2>
+
+                <p>
+                    Dear Thangoww ❤️,
+                    <br><br>
+
+                    Happy Birthday to the most special person
+                    in my life.
+                    <br><br>
+
+                    Thank you for entering my life.
+                    Thank you for all the smiles,
+                    memories, fights, silly moments,
+                    care and love.
+                    <br><br>
+
+                    Almost three years...
+                    and I still want more memories with you.
+                    🥹❤️
+                    <br><br>
+
+                    No matter what happens,
+                    I will always be with you.
+                    <br>
+                    I will never leave your hand.
+                    🤝❤️
+                    <br><br>
+
+                    One day,
+                    I want to make all our dreams come true
+                    together.
+                    💍
+                    <br><br>
+
+                    I LOVE YOU MUHH!!
+                    😘❤️
+                    <br><br>
+
+                    Forever yours,
+                    <br>
+                    <b>Meoww 🐱❤️</b>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FUTURE ================= -->
+
+        <section class="future section">
+
+            <div class="section-title">
+
+                <span>OUR FUTURE</span>
+
+                <h2>
+                    One Day... 💍
+                </h2>
+
+            </div>
+
+
+            <div class="future-card">
+
+                <div class="future-icon">
+                    💍
+                </div>
+
+                <h2>
+                    From College Days...
+                    <br>
+                    To Forever.
+                </h2>
+
+                <p>
+                    We started with an online class.
+                    <br>
+                    We became friends.
+                    <br>
+                    We fell in love.
+                    <br>
+                    We made memories.
+                    <br><br>
+
+                    And one day,
+                    I hope I can call you
+                    <strong>my husband.</strong>
+                    🥹❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FINAL MESSAGE ================= -->
+
+        <section class="final-section section">
+
+            <div class="final-card">
+
+                <div class="final-hearts">
+                    ❤️ 💕 ❤️
+                </div>
+
+                <h1>
+                    Happy Birthday
+                    <br>
+                    My Thangoww ❤️
+                </h1>
+
+                <p>
+                    You are one of the most beautiful
+                    parts of my life.
+                </p>
+
+                <p>
+                    I hope every dream of yours comes true.
+                    <br>
+                    And I hope I get to stand beside you
+                    through all of it.
+                </p>
+
+                <div class="promise">
+
+                    <p>
+                        Bayapadatha Thangoww...
+                        <br><br>
+
+                        Na epavum un koodave irupe.
+                        <br>
+                        Unna vitu poira matee.
+                        <br><br>
+
+                        It's my promise. ❤️
+                    </p>
+
+                </div>
+
+                <h2>
+                    I LOVE YOU MUHH!! 😘❤️
+                </h2>
+
+                <p class="forever">
+                    Forever Yours,
+                    <br>
+                    <b>Meoww 🐱❤️</b>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CELEBRATION ================= -->
+
+        <section
+            id="celebration"
+            class="celebration hidden"
+        >
+
+            <div class="celebration-content">
+
+                <div class="big-celebration">
+                    🎉🎂🎉
+                </div>
+
+                <h1>
+                    HAPPY BIRTHDAY
+                </h1>
+
+                <h2>
+                    MY THANGOWW ❤️
+                </h2>
+
+                <p>
+                    With all my love,
+                    <br>
+                    Your Meoww 🐱❤️
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
